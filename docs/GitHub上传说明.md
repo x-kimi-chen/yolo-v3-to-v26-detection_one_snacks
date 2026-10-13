@@ -49,11 +49,11 @@ git config --global user.email "你的邮箱@example.com"
 
 1. 打开 https://github.com/new
 2. 填写：
-   - **Repository name**：`yolo-v3-to-v26-detection`（或你喜欢的名字，建议英文）
+   - **Repository name**：`yolo-v3-to-v26-detection_one_snacks`（或你喜欢的名字，建议英文）
    - **Description**：`YOLOv3 → YOLO26 全版本零食产品检测：12 个版本训练、对比与使用指南`
    - 可见性：**Public**（公开）或 Private（私有）按需选择
 3. ⚠️ **不要勾选** "Add a README file"、"Add .gitignore"、"Choose a license"（发布包里已有这些文件，勾了会冲突）
-4. 点击 **Create repository**，记下页面显示的仓库地址（形如 `https://github.com/你的用户名/yolo-v3-to-v26-detection.git`）
+4. 点击 **Create repository**，记下页面显示的仓库地址（形如 `https://github.com/你的用户名/yolo-v3-to-v26-detection_one_snacks.git`）
 
 ---
 
@@ -71,7 +71,7 @@ git add .
 git commit -m "初始发布：YOLOv3→YOLO26 全版本检测项目（12版本训练+数据集+权重+文档）"
 
 # 3. 关联远程仓库（替换为你的仓库地址）
-git remote add origin https://github.com/你的用户名/yolo-v3-to-v26-detection.git
+git remote add origin https://github.com/你的用户名/yolo-v3-to-v26-detection_one_snacks.git
 
 # 4. 推送
 git push -u origin main
@@ -181,7 +181,7 @@ git push
 2. 选择目录：`D:\yolo-project_one\github_ready`
 3. 若提示 "This directory does not appear to be a Git repository"，点击 **create a repository**（在该目录创建）
 4. 在创建窗口中填写：
-   - **Name**：`yolo-v3-to-v26-detection`（或你喜欢的名字）
+   - **Name**：`yolo-v3-to-v26-detection_one_snacks`（或你喜欢的名字）
    - **Description**：建议填 `YOLOv3→YOLO26 全版本零食产品检测：12 个版本全部跑通；本项目仅供研究学习使用`
    - **取消勾选** "Initialize with a README"（发布包里已有，勾了会冲突）
    - **Git Ignore**：选 `None`（发布包内已有 .gitignore）
