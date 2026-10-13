@@ -1,0 +1,59 @@
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ============ 缓存与临时文件 ============
+*.cache
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# ============ 大体量/第三方内容（勿入库） ============
+# 第三方框架源码（请按 README 指引自行克隆）
+yolo-repos/
+
+# Python 环境与工具
+yolo-all/
+envs/
+tools/
+wheels/
+
+# 训练运行产物（完整曲线与日志，权重已精选至 weights/）
+runs_train/
+
+# 原始高清图片（数据集为 1280px 版本，见 dataset/）
+my_images/
+
+# 第三方预训练权重（COCO 等，勿重新分发）
+/*.pt
+FastSAM-s.pt
+weights/*.pt.part
+mobileclip_blt.ts
+
+# 自动预标注中间产物（保留 prelabels 成品）
+autolabel/proposals.jsonl
+autolabel/clusters.json
+autolabel/refine.json
+autolabel/final.json
+autolabel/clip_dl/
+autolabel/test/
+autolabel/_tmp_crop.jpg
+
+# ============ 密钥与隐私防护 ============
+.env
+.env.*
+*.pem
+*.key
+*.p12
+secrets.*
+credentials*
+config.local.*
+
+# ============ 超限权重（>100MB，请通过 Releases 发布） ============
+weights/yoloV3_best.pt
+weights/yoloV4_best.pth

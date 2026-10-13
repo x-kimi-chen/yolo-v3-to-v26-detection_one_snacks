@@ -1,0 +1,10 @@
+# YOLOv7 训练数据配置
+train: D:/yolo-project_one/dataset/inspection/images/train
+val: D:/yolo-project_one/dataset/inspection/images/val
+nc: 5
+names:
+  0: puff_vanilla
+  1: puff_strawberry
+  2: gluten_spicy
+  3: gluten_pepper
+  4: cracker

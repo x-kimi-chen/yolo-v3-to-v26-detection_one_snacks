@@ -1,0 +1,9 @@
+path: D:/yolo-project_one/dataset/inspection
+train: images/train
+val: images/val
+names:
+  0: puff_vanilla
+  1: puff_strawberry
+  2: gluten_spicy
+  3: gluten_pepper
+  4: cracker
