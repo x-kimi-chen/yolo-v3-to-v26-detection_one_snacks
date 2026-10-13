@@ -6,6 +6,8 @@
 
 > ⚠️ **本项目仅供学习研究与技术交流使用，请勿用于商业用途。** 详见文末「用途声明」。
 
+> 🚀 **第一次来？** 先看 [5 分钟演示导览](docs/项目演示说明.md)（30 秒了解项目 → 成果速览 → 亲手体验）。
+
 ## ✨ 项目亮点
 
 - 🎯 **全版本覆盖**：YOLOv3 / v4 / v5 / v6 / v7 / v8 / v9 / v10 / v11 / v12 / v13 / YOLO26，共 12 个版本，同数据、同评测口径横向对比
@@ -85,6 +87,18 @@ results[0].save(filename="result.jpg")   # 保存带框结果图
 | 3 | gluten_pepper | 素毛肚·山椒味（绿色袋） |
 | 4 | cracker | 黑松露火腿苏打饼干（金色盒） |
 
+## 📦 权重下载
+
+- **仓库内**（克隆即可用）：`weights/` 目录包含 10 个版本的训练权重
+- **完整 12 版本权重包**（含超过 GitHub 单文件限制的 YOLOv3 / YOLOv4）：见 [Releases](../../releases) 页面的 `yolo-v3-v26-12versions-weights.zip`
+
+```python
+from ultralytics import YOLO
+
+model = YOLO("weights/yoloV12_best.pt")                 # 或解压后的任意版本权重
+model.predict("your_image.jpg", imgsz=640, save=True)   # 一行完成推理
+```
+
 ## 🗂️ 项目结构
 
 ```
@@ -99,6 +113,7 @@ results[0].save(filename="result.jpg")   # 保存带框结果图
 ├── results/                  成绩单、训练曲线、12版本推理对比图
 ├── autolabel/prelabels/      自动预标注结果（171 个 YOLO 标签）
 └── docs/
+    ├── 项目演示说明.md                         访客导览与现场演示脚本（先看这个）
     ├── YOLO全版本检测项目使用说明_详细版.docx   完整使用手册
     └── GitHub上传说明.md                       本仓库的上传/维护指引
 ```
